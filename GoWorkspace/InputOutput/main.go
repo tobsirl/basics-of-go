@@ -1,5 +1,7 @@
 package main
 
+var url = "https://www.google.com"
+
 func main() {
 	println("Hello World!")
 	var x int = 5
@@ -17,4 +19,6 @@ func main() {
 
 	otherNumber := 10
 	println(otherNumber)
+
+	println(url)
 }

@@ -1,5 +1,6 @@
 package main
 
+// global variable
 var url = "https://www.google.com"
 
 func main() {
@@ -11,6 +12,7 @@ func main() {
 	const y = 10
 	println(y)
 
+	// function scope
 	var text string = "Hello"
 	println(text)
 

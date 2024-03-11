@@ -14,4 +14,7 @@ func main() {
 
 	otherText := "World"
 	println(otherText)
+
+	otherNumber := 10
+	println(otherNumber)
 }

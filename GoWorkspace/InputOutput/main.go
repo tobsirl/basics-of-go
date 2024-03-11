@@ -8,4 +8,10 @@ func main() {
 	println(name)
 	const y = 10
 	println(y)
+
+	var text string = "Hello"
+	println(text)
+
+	otherText := "World"
+	println(otherText)
 }

@@ -24,5 +24,5 @@ func main() {
 
 	println(url)
 
-	printData()
+	PrintData()
 }

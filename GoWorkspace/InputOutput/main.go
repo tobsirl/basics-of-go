@@ -23,4 +23,6 @@ func main() {
 	println(otherNumber)
 
 	println(url)
+
+	printData()
 }

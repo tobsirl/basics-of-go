@@ -30,4 +30,10 @@ func main() {
 	firstName := "Paul"
 	age := 25
 	println(id, firstName, age)
+
+	// Collections
+	var numbers [5]int
+
+	// Slices: similar to a dynamic length array, but they are actually chunks of an array
+	var names []string
 }

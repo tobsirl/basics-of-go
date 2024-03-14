@@ -13,4 +13,8 @@ func init() {
 	Countries[7] = "Peru"
 	Countries[8] = "Ecuador"
 	Countries[9] = "Venezuela"
+
+	// get the length of an array
+	qty := len(Countries)
+	println(qty)
 }

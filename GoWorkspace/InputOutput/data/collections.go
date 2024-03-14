@@ -17,4 +17,7 @@ func init() {
 	// get the length of an array
 	qty := len(Countries)
 	println(qty)
+
+	Prices := [5]float64 {10.5, 20.5, 30.5, 40.5, 50.5}
+	println(Prices[0])
 }

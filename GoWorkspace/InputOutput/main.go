@@ -25,4 +25,9 @@ func main() {
 	println(url)
 
 	PrintData()
+
+	id := 1
+	firstName := "Paul"
+	age := 25
+	println(id, firstName, age)
 }

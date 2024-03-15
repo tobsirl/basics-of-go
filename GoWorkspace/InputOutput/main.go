@@ -3,7 +3,17 @@ package main
 // global variable
 var url = "https://www.google.com"
 
+// functions receiving reference
+func calculateTax(price float32) (float32, float32) {
+
+	return price * 0.075, price * 0.025
+}
+
 func main() {
+	stateTax, _ := calculateTax(100)
+
+	println(stateTax)
+
 	println("Hello World!")
 	var x int = 5
 	println(x)
@@ -36,6 +46,8 @@ func main() {
 
 	// Slices: similar to a dynamic length array, but they are actually chunks of an array
 	var names []string
+
+
 }
 
 func save() {
@@ -53,3 +65,4 @@ func add (x int, y int) int {
 func addAndSubtract (x int, y int) (int, int) {
 	return x + y, x - y
 }
+

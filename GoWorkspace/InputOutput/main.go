@@ -37,3 +37,19 @@ func main() {
 	// Slices: similar to a dynamic length array, but they are actually chunks of an array
 	var names []string
 }
+
+func save() {
+	println("Saving data...")
+}
+
+func saveString(text string) {
+	println(text)
+}
+
+func add (x int, y int) int {
+	return x + y
+}
+
+func addAndSubtract (x int, y int) (int, int) {
+	return x + y, x - y
+}

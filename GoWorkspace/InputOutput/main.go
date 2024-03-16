@@ -13,6 +13,9 @@ import "fmt"
 
 func birthday(age *int)  {
 	fmt.Printf("The pointer is %v and the value is %d\n", age, *age)
+	if (*age>140) {
+		panic("Too old to be true!")
+	}
 	*age++
 }
 

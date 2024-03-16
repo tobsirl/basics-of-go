@@ -49,6 +49,8 @@ func main() {
 
 	// id := 1
 	// firstName := "Paul"
+	defer fmt.Println("Bye!")
+
 	age := 25
 	birthday(&age)
 	birthday(&age)

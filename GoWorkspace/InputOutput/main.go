@@ -43,12 +43,14 @@ func main() {
 
 	// PrintData()
 
-	id := 1
-	firstName := "Paul"
+	// id := 1
+	// firstName := "Paul"
 	age := 25
 	birthday(&age)
+	birthday(&age)
+	birthday(&age)
 	fmt.Println(age)
-	println(id, firstName, age)
+	// println(id, firstName, age)
 
 	// Collections
 	// var numbers [5]int

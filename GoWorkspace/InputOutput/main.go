@@ -12,7 +12,7 @@ import "fmt"
 // }
 
 func birthday(age *int)  {
-	fmt.Printf("The pointer is %v and the value is %v\n", age, *age)
+	fmt.Printf("The pointer is %v and the value is %d\n", age, *age)
 	*age++
 }
 

@@ -3,16 +3,16 @@ package main
 import "fmt"
 
 // global variable
-var url = "https://www.google.com"
+// var url = "https://www.google.com"
 
-// functions receiving reference
-func calculateTax(price float32) (float32, float32) {
+// // functions receiving reference
+// func calculateTax(price float32) (float32, float32) {
 
-	return price * 0.075, price * 0.025
-}
+// 	return price * 0.075, price * 0.025
+// }
 
-func birthday(age int)  {
-	age+= 1
+func birthday(age *int)  {
+	*age++
 }
 
 func main() {
@@ -46,7 +46,7 @@ func main() {
 	id := 1
 	firstName := "Paul"
 	age := 25
-	birthday(age)
+	birthday(&age)
 	fmt.Println(age)
 	println(id, firstName, age)
 
@@ -59,19 +59,19 @@ func main() {
 
 }
 
-func save() {
-	println("Saving data...")
-}
+// func save() {
+// 	println("Saving data...")
+// }
 
-func saveString(text string) {
-	println(text)
-}
+// func saveString(text string) {
+// 	println(text)
+// }
 
-func add (x int, y int) int {
-	return x + y
-}
+// func add (x int, y int) int {
+// 	return x + y
+// }
 
-func addAndSubtract (x int, y int) (int, int) {
-	return x + y, x - y
-}
+// func addAndSubtract (x int, y int) (int, int) {
+// 	return x + y, x - y
+// }
 

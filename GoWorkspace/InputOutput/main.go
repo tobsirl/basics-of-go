@@ -49,13 +49,13 @@ func main() {
 
 	// id := 1
 	// firstName := "Paul"
-	defer fmt.Println("Bye!")
+	// defer fmt.Println("Bye!")
 
-	age := 25
-	birthday(&age)
-	birthday(&age)
-	birthday(&age)
-	fmt.Println(age)
+	// age := 25
+	// birthday(&age)
+	// birthday(&age)
+	// birthday(&age)
+	// fmt.Println(age)
 	// println(id, firstName, age)
 
 	// Collections
@@ -64,6 +64,13 @@ func main() {
 	// Slices: similar to a dynamic length array, but they are actually chunks of an array
 	// var names []string
 
+	// Control Structures
+	if user := "Paul"; user == "Paul" {
+		println("Hello Paul!")
+	} else {
+		println("Hello Stranger!")
+		
+	}
 
 }
 

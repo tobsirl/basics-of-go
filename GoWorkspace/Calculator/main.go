@@ -15,4 +15,18 @@ func main() {
 	fmt.Scanln(&number2)
 	fmt.Println("Enter operation: ")
 	fmt.Scanln(&operation)
+
+	switch operation {
+		case "+":
+		fmt.Println(number1 + number2)
+	case "-":
+		fmt.Println(number1 - number2)
+	case "*":
+		fmt.Println(number1 * number2)
+	case "/":
+		fmt.Println(number1 / number2)
+	default:
+		fmt.Println("Invalid operation")
+		return
+	}
 }

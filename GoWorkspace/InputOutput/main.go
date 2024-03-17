@@ -97,6 +97,16 @@ func main() {
 	for i := 0; i < 10; i++ {
 		println(i)
 	}
+
+	// For range, similar to "for in" in other languages
+	for index := range []string{"Paul", "John", "Mary"} {
+		println(index)
+	}
+
+	// For range, similar to "foreach" in other languages
+	for key, value := range map[string]string{"name": "Paul", "age": "25"} {
+		println(key, value)
+	}
 }
 
 // func save() {

@@ -65,6 +65,7 @@ func main() {
 	// var names []string
 
 	// Control Structures
+	// if else
 	if user := "Paul"; user == "Paul" {
 		println("Hello Paul!")
 	} else {
@@ -72,6 +73,17 @@ func main() {
 		
 	}
 
+	day := "Monday"
+
+	// switch
+	switch day {
+	case "Monday":
+		println("It's Monday!")
+	case "Tuesday":
+		println("It's Tuesday!")
+	default:
+		println("It's not Monday or Tuesday!")
+	} 
 }
 
 // func save() {

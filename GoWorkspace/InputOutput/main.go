@@ -84,6 +84,19 @@ func main() {
 	default:
 		println("It's not Monday or Tuesday!")
 	} 
+
+	switch {
+	case day == "Monday":
+
+	case day == "Tuesday":
+
+	default:
+	}
+
+	// Classic for loop
+	for i := 0; i < 10; i++ {
+		println(i)
+	}
 }
 
 // func save() {

@@ -1,7 +1,18 @@
 package main
 
-import fileutils "frontendmasters.com/go/files/fileutils"
+import (
+	"os"
+
+	fileutils "frontendmasters.com/go/files/fileutils"
+)
 
 func main() {
-	fileutils.ReadTextFile("test.txt")
+	rootPath, _ := os.Getwd()
+	c, err := fileutils.ReadTextFile(rootPath + "/data/text.txt")
+	
+	if err != nil {
+		println("Error reading file")
+	} else {
+		println("File content: ", c)
+	}
 }

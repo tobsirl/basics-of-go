@@ -1,5 +1,7 @@
 package main
 
+import fileutils "frontendmasters.com/go/files/filemanagement"
+
 func main() {
-	println("Hello, World!")
+	fileutils.ReadTextFile("test.txt")
 }

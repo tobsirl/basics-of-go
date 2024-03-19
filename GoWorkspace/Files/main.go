@@ -8,11 +8,14 @@ import (
 
 func main() {
 	rootPath, _ := os.Getwd()
-	c, err := fileutils.ReadTextFile(rootPath + "/data/text.txt")
+	filePath := rootPath + "/data/text.txt"
+	c, err := fileutils.ReadTextFile(filePath)
 	
 	if err != nil {
 		println("Error reading file")
 	} else {
+		newContent	:= c + "Appended text"
 		println("File content: ", c)
+		fileutils.WriteToFile(filePath + ".output.txt", newContent)
 	}
 }

@@ -8,5 +8,9 @@ func main() {
 
 
 
-	println(user)
+	println(user.Print())
+	println(user.GetId())
+	println(user.GetFirstName())
+	println(user.GetLastName())
+	println(user.GetScore())
 }

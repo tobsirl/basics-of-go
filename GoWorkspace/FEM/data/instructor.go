@@ -3,10 +3,10 @@ package data
 import "fmt"
 
 type Instructor struct {
-	Id int
+	Id        int
 	FirstName string
-	LastName string
-	Score int
+	LastName  string
+	Score     int
 }
 
 func (i Instructor) GetId() int {

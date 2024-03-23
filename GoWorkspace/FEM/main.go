@@ -3,7 +3,7 @@ package main
 import "frontendmasters.com/go/server/data"
 
 func main() {
-	user := data.Instructor{}
+	user := data.Instructor{Id: 1, FirstName: "John", LastName: "Doe"}
 	user.FirstName = "Paul"
 
 

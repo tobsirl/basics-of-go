@@ -3,9 +3,10 @@ package main
 import "frontendmasters.com/go/server/data"
 
 func main() {
-	max := data.Instructor{}
+	user := data.Instructor{}
+	user.FirstName = "Paul"
 
 
 
-	println(max)
+	println(user)
 }

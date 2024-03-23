@@ -1,8 +1,8 @@
 package data
 
 type Instructor struct {
-	id int
-	firstName string
-	lastName string
-	score int
+	Id int
+	FirstName string
+	LastName string
+	Score int
 }

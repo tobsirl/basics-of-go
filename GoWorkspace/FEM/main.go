@@ -1,9 +1,7 @@
 package main
 
-func main() {
-	// cards := newDeck()
-	// cards.saveToFile("my_cards")
+import "frontendmasters.com/go/server/data"
 
-	cards := newDeckFromFile("my_cards")
-	cards.print()
+func main() {
+	var max data.Instructor
 }

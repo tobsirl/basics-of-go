@@ -3,5 +3,9 @@ package main
 import "frontendmasters.com/go/server/data"
 
 func main() {
-	var max data.Instructor
+	max := data.Instructor{}
+
+
+
+	println(max)
 }

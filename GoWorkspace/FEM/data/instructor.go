@@ -1,8 +1,30 @@
 package data
 
+import "fmt"
+
 type Instructor struct {
 	Id int
 	FirstName string
 	LastName string
 	Score int
+}
+
+func (i Instructor) GetId() int {
+	return i.Id
+}
+
+func (i Instructor) GetFirstName() string {
+	return i.FirstName
+}
+
+func (i Instructor) GetLastName() string {
+	return i.LastName
+}
+
+func (i Instructor) GetScore() int {
+	return i.Score
+}
+
+func (i Instructor) print() string {
+	return fmt.Sprintf("Id: %d, FirstName: %s, LastName: %s, Score: %d", i.Id, i.FirstName, i.LastName, i.Score)
 }

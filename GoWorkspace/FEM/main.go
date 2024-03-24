@@ -3,14 +3,12 @@ package main
 import "frontendmasters.com/go/server/data"
 
 func main() {
-	user := data.Instructor{Id: 1, FirstName: "John", LastName: "Doe"}
-	user.FirstName = "Paul"
+	paul := data.Instructor{Id: 1, FirstName: "John", LastName: "Doe"}
 
+	simon := data.NewInstructor("Simon", "Holmes", 100)
+	keith := data.NewInstructor("Keith", "Powell", 100)
 
-
-	println(user.Print())
-	println(user.GetId())
-	println(user.GetFirstName())
-	println(user.GetLastName())
-	println(user.GetScore())
+	println(paul.Print())
+	println(simon.Print())
+	println(keith.Print())
 }

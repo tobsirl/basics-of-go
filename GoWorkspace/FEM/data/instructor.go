@@ -28,3 +28,7 @@ func (i Instructor) GetScore() int {
 func (i Instructor) Print() string {
 	return fmt.Sprintf("Id: %d, FirstName: %s, LastName: %s, Score: %d", i.Id, i.FirstName, i.LastName, i.Score)
 }
+
+func NewInstructor(name string, lastname string, score int) Instructor {
+	return Instructor{ FirstName: name, LastName: lastname, Score: score }
+}

@@ -1,5 +1,7 @@
 package data
 
+import "fmt"
+
 type Duration float32 // in hours
 
 type Course struct {
@@ -9,4 +11,8 @@ type Course struct {
 	Legacy     bool
 	Duration   Duration
 	Instructor Instructor
+}
+
+func (c Course) String() string {
+	return fmt.Sprintf("Id: %d, Name: %s, Slug: %s, Legacy: %t, Duration: %f, Instructor: %s", c.Id, c.Name, c.Slug, c.Legacy, c.Duration, c.Instructor.Print())
 }

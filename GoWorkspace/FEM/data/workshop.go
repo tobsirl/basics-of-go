@@ -3,6 +3,6 @@ package data
 import "time"
 
 type Workshop struct {
-	Course Course
+	Course // embedding
 	Date  time.Time
 }

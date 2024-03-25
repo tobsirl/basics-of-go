@@ -14,6 +14,9 @@ func main() {
 
 	goCourse := data.Course{Id: 1, Name: "Go Fundamentals", Slug: "go-fundamentals", Legacy: false, Duration: 3.2, Instructor: paul}
 
+	swiftWS := data.Workshop{}
+	
+
 	println(paul.Print())
 	println(simon.Print())
 	println(keith.Print())

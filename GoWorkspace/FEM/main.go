@@ -14,7 +14,9 @@ func main() {
 
 	goCourse := data.Course{Id: 1, Name: "Go Fundamentals", Slug: "go-fundamentals", Legacy: false, Duration: 3.2, Instructor: paul}
 
-	swiftWS := data.Workshop{}
+	swiftWS := data.NewWorkShop("Swift Fundamentals", simon)
+
+	fmt.Printf("%+v\n", swiftWS)
 	
 
 	println(paul.Print())

@@ -23,4 +23,10 @@ func main() {
 	println(simon.Print())
 	println(keith.Print())
 	fmt.Printf("%+v\n", goCourse)
+
+	var courses = [2]data.Signable{goCourse, swiftWS}
+
+	for _, course := range courses {
+		fmt.Println(course)
+	}
 }

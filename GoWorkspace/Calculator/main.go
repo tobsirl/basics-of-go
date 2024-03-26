@@ -17,7 +17,7 @@ func main() {
 	fmt.Scanln(&operation)
 
 	switch operation {
-		case "+":
+	case "+":
 		fmt.Println(number1 + number2)
 	case "-":
 		fmt.Println(number1 - number2)

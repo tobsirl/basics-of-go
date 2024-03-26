@@ -30,5 +30,5 @@ func (i Instructor) Print() string {
 }
 
 func NewInstructor(name string, lastname string, score int) Instructor {
-	return Instructor{ FirstName: name, LastName: lastname, Score: score }
+	return Instructor{FirstName: name, LastName: lastname, Score: score}
 }

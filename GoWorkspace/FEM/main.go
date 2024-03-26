@@ -18,7 +18,6 @@ func main() {
 	swiftWS := data.NewWorkShop("Swift Fundamentals", simon)
 
 	fmt.Printf("%+v\n", swiftWS)
-	
 
 	println(paul.Print())
 	println(simon.Print())

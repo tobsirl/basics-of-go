@@ -11,9 +11,9 @@ import "fmt"
 // 	return price * 0.075, price * 0.025
 // }
 
-func birthday(age *int)  {
+func birthday(age *int) {
 	fmt.Printf("The pointer is %v and the value is %d\n", age, *age)
-	if (*age>140) {
+	if *age > 140 {
 		panic("Too old to be true!")
 	}
 	*age++
@@ -21,7 +21,6 @@ func birthday(age *int)  {
 
 func main() {
 	// stateTax, _ := calculateTax(100)
-
 
 	// println(stateTax)
 
@@ -70,7 +69,7 @@ func main() {
 		println("Hello Paul!")
 	} else {
 		println("Hello Stranger!")
-		
+
 	}
 
 	day := "Monday"
@@ -83,7 +82,7 @@ func main() {
 		println("It's Tuesday!")
 	default:
 		println("It's not Monday or Tuesday!")
-	} 
+	}
 
 	switch {
 	case day == "Monday":
@@ -124,4 +123,3 @@ func main() {
 // func addAndSubtract (x int, y int) (int, int) {
 // 	return x + y, x - y
 // }
-

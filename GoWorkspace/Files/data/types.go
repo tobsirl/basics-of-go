@@ -6,7 +6,7 @@ type json = map[string]string
 var x integer
 
 type distance float64
-type distanceKm	float64
+type distanceKm float64
 
 // Method to convert distance from miles to km
 func (miles distance) ToKm() distanceKm {

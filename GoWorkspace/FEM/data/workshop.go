@@ -4,7 +4,7 @@ import "time"
 
 type Workshop struct {
 	Course // embedding
-	Date  time.Time
+	Date   time.Time
 }
 
 func (c Workshop) SignUp() bool {

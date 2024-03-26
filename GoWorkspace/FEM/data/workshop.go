@@ -7,6 +7,10 @@ type Workshop struct {
 	Date  time.Time
 }
 
+func (c Workshop) SignUp() bool {
+	return true
+}
+
 func NewWorkShop(name string, instructor Instructor) Workshop {
 	return Workshop{
 		Course: Course{

@@ -6,9 +6,9 @@ import (
 )
 
 func printMessage(text string, channel chan string)  {
-	for i := 0; i < 10; i++  {
+	for i := 0; i < 5; i++  {
 		fmt.Println(text)
-		time.Sleep(time.Millisecond * 800)
+		time.Sleep(400 * time.Millisecond)
 	}
 	channel <- "Message printed"
 }
@@ -16,6 +16,6 @@ func printMessage(text string, channel chan string)  {
 func main()  {
 	var channel chan string
 	go printMessage("Go is great!", channel)
-	<- channel
-	// go printMessage("Go is awesome!")
+	response := <- channel
+	fmt.Println(response)
 }

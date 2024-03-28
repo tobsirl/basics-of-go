@@ -14,5 +14,5 @@ func printMessage(text string)  {
 
 func main()  {
 	go printMessage("Go is great!")
-	printMessage("Go is awesome!")
+	go printMessage("Go is awesome!")
 }
